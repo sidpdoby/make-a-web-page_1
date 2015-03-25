@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - sd1718-Stage 1 Project Resubmission</title>
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Sid's Notes</title>
+  <style>
+  	body {
+	padding: 20px 10px;
+	font-family: Helvetica;
+	max-width: 2000px;
+	margin: 0 auto; /* The 0 refers to the top and bottom margins and the "auto" automatically */
+	font-size: 1.4em;
+}                 /* sets the left and right margins to equal values. This centers the body on the page.*/
+
+h1 {
+	text-align: center;
+	color: #294860;
+}
+
+p {
+	margin: 10px 0;
+}
+
+ul {
+	list-style-type: none; /* this removes the bullets that show up by default in unordered lists */
+}
+
+li {
+	font-size: 20px;
+	line-height: 44px; /* each line of text should occupy 44 pixels of height (good for mobile usage and fat fingers) */
+}
+
+.lesson {
+	background-color: #294860;
+	border-radius: 20px;
+	color: white;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+h2 {
+	margin: 10px;
+}
+
+.concept {
+	background-color: #DFEAF1;
+	padding: 4px;
+	margin: 10px;
+	border-radius: 4px;
+	color: black;
+}
+
+.concept-title {
+	font-size: 28px;
+	margin: 8px;
+	text-align: center;
+	color: #294860;
+}
+
+.concept-description {
+	font-weight: lighter;
+	margin: 6px;
+}
+
+.code {
+	font-family: Courier;
+	color : black;
+	font-weight: bold;
+	padding-left:  4px;
+	padding-right: 4px;
+}
+</style>
+</head>
+<body>	
+    <div class="app">
+    <div class="screenshot">image</div>
+    <div class="decription"></div>
+  </div>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <p> By using a Table of Contents at the beginning of a document, the user may click on a particular link, allowing the user to "jump" to that section. Thank you to Andy for providing the Table of Contents format. 
+    </p>
+    <ol>
+      <li><a href="#lesson-1">Lesson 1: The Basics of the Web and HTML</a>
+        <ul>
+          <li><a href="#lesson-1-1">How the Web Works</a></li>
+          <li><a href="#lesson-1-2">HTML</a></li>
+          <li><a href="#lesson-1-3">Tags and Elements</a></li>
+          <li><a href="#lesson-1-4">Why Computers are Stupid</a></li>
+          <li><a href="#lesson-1-5">Inline vs Block Elements</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-2">Lesson 2: Creating a Structured Document with HTML</a>
+        <ul>
+          <li><a href="#lesson-2-1">Developer Tools</a></li>
+          <li><a href="#lesson-2-2">HTML's "tree-like" Structure</a></li>
+          <li><a href="#lesson-2-3">Indentations and Boxes</a></li>
+          <li><a href="#lesson-2-4">Text Editors</a></li>
+        </ul>
+      </li>
+      <li class="TOC-lesson"><a href="#lesson-3">Lesson 3: Adding CSS Style to HTML Structure</a>
+        <ul>
+          <li><a href="#lesson-3-1">Avoiding Repetition</a></li>
+          <li><a href="#lesson-3-2">CSS</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  <h1>Important Concepts</h1>
+  <div class="lesson">
+    <h2 id="lesson-1">Lesson 1: The Basics of the Web and HTML</h2>
+    <div class="concept" id="lesson-1-1">
+      <div class="concept-title">
+        <b>How the Web Works</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          The web serves as a bunch of computers with many pieces all of which communicate with each other. <b>Users</b> initiate a requests via <br>
+          an <b>HTTP Request</b> that interacts with a <b>server.</b> Udacity Intro to Programming offers <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/e-48329854/m-48480496">this video</a>
+          does a good job of explaining more.
+        </P>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-2">
+      <div class="concept-title">
+        <b>HTML</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML stands for <em>Hypertext Markup
+          Language.</em> HTML documents form the majority of the
+          content on the web.
+        </p>
+        <p>There are approximately 30 billion pages and hyperlinks are throughout. A variety of document types and hyperlinks included within 
+        HTML. These include:</p>
+          <ul>
+            <li> Text, which is the content (what you see).</li>
+            <li> Markup, what the content looks like.</li>
+            <li> URLs, referenes to other documents, i.e. images and videos.</li>
+            <li> Links to other pages.</li>
+          </ul>
+        <p>
+          Udacity offers <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48724340">this
+          video</a> providing an overview
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-3">
+      <div class="concept-title">
+        <b>Tags and Elements</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML documents are made of HTML
+          <b>elements</b>. When writing HTML, we
+          tell browsers the type of each element by using HTML
+          <b>tags</b>. Udacity's <a href="https://www.udacity.com/course/viewer#!/c-ud721/l-3508959201/m-48723444">video</a> explains the
+          distinction well.
+        </p>
+        <p> Tags are primarily composed of opening and closing tags. However, there are tags called 'void' which do not require a closing tag. </p>
+        <p>Failing to properly close a tag may result in everything following the opening tag to assume that attribute of that tag.  <b>For example</b>, 
+        if one were to use an opening tag of "em" and fail to close that tag, everything from the opening tag forward would be shown in italics.</p>
+        <p> Sample tags include:</p>
+          <ul>
+            <li> b, for <b>bolding</b> text between opening and closing tags</li>
+            <li> em, for <em>italicizing</em> text</li>
+            <li> br, creates a break between text.</li>
+            <li> p, paragraph, does just that.  LOL.  It has content.</li>
+          </ul>
+        <p>Attributes are properties of HTML and used properly, create powerful pages. <br>Attributes include:</p>
+           <ul>
+             <li>HREF, which creates a link to access additional information/site.  For example: <a href="www.udacity.con">Udacity</a></li>
+             <li>IMG, which does not contain a closing tag. It is considered a "void" tag. In the example below the use of 'alt' creates an alternate view of the referenced source.  This is quite helpful should a web error occur and supports a blind computer user.' <br>
+             <b>For example:</b> <img src="URL" alt=text>
+          </ul>
+        <p>Anchor tags use the "href" attribute while image tags use the "src" attribute.</p>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-4">
+      <div class="concept-title">
+        Why Computers are Stupid
+      </div>
+        <div class="concept-description">
+        <p>
+          Computers are stupid because they interpret
+          instructions literally. This makes them very
+          unforgiving since a small mistake by a
+          programmer can cause huge problems in a program.
+        </p>
+        <p> Computers have yet to reach a full state of articial intelligence and currently posess the properties <br>
+        applied by a programmer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="concept" id="lesson-1-5">
+      <div class="concept-title">
+        <b>Inline vs Block Elements</b>
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML elements are either <b>inline</b>
+          or <b>block</b>. Block elements form
+          an "invisible box" around the content inside of them.
+        </p>
+        <p>Inline elements include:</p>
+            <ul>
+              <li>a, used to create links such as <a href="reddit.com">derp</a>  Opening and closing tags used.</li>
+              <li>br, used toens a line and subsequently wraps text to next line. No closing tag. </li>
+              <li>em, emphasizes and italicizes words. Opening and closing tags used.</li>
+              <li> img, introduces a picture. No closing tag</li>
+              <li> span, uses opening and closing tags</li>
+              <li> strong, uses opening and closing tags</li>
+            </ul>
+        <p>Block elemeents include:</p>
+           <ul>
+              <li>p, which creates in invisible "block" around everything included within opening and closing tags. Additional attributes such as
+              height and width may also be applied.</li>
+              <li> form and its closing tags where developer is creating a form for a user to complete. </li>
+           </ul>
+        <p>Addtionally these block elements may be considered 'container' elements and have content.</p>
+           <ul>
+              <li>div and its closing tag. Syntax::<div class=”bar”>text</div> 
+              </li>
+               <li>span and its closing tag. Syntax: <span class =”foo”>text</span> , where ‘class’ is a CSS style.
+               </li> 
+           </ul>
+      </div>
+    </div>
+  <div class="lesson">
+    <h2 id="lesson-2">Lesson 2: Creating a Structured Document with HTML</h2>
+    <div class="concept" id="lesson-2-1">
+      <div class="concept-title">
+        <b>Creating a Structured Document with HTML</b>
+      </div>
+      <div class="concept-description">
+          <p>The web structure uses headers, titles, and body content to create a lively and interesting webpage. The structure includes <br>
+       	 elements, attributes (properties), linkages for reference and easy access, as well as a variety of stye options (CSS or JavaScript).
+	      </p>
+	      <p> Depending on the visual, one may "nest" elements inside each other, creating varying layers of intricacy.
+	      </p>
+	  </div>
+	</div>
+   </div>
+  <div class="lesson">
+    <h2 id="lesson-3">Lesson 3: Adding CSS Style to HTML Structure</h2>
+    <div class="concept" id="lesson-3-1">
+      <div class="concept-title">
+        <b>Creating a Structured Document with HTML</b>
+      </div>
+      <div class="concept-description">
+        <p> CSS stands for Cascading Style Sheets and they give programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same <span class="code">class</span> name and then specifying the style that should apply to that class.
+        </p>
+    </div>
+  </div>
+    <div class="concept" id="lesson-3-2">
+      <div class="concept-title">
+        <b>Benefits of Style Sheets:</b>
+      </div>
+      <div class="concept-description">
+        <p> Avoiding <b>repetition</b> creates cleaner code which may then become 'reuseable'. It supports "work smarter, not harder".
+        </p>
+        <p>Creating <b>consistency:</b> Use CSS (Cascading Style Sheets) to standardize the look of web pages.
+        </p>
+      </div>
+      <div class="concept-description">
+        <p>To create a style structure within the HTML one would do something like this:</p>
+        Within the header, create a link as shown here:  
+        <p> Using opening and closing "style" tags", Be sure to define your class and place <br>
+        your element details between left and right braces ({}). </p>
+      </div>
+  	</div>
+  </div>
+</body>
+</html>
+
+</body>
+
+</html>
